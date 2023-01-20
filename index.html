@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Reloj hecho con JavaScript" />
+    <title>Reloj con JavaScript</title>
+    <link rel="prefetch" href="index.html" />
+
+    <!-- normalize -->
+    <link rel="preload" href="css/normalize.csss" as="style" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- app -->
+    <link rel="preload" href="css/style.css" as="style" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h2 class="container__title fw-bold text-center">Reloj en JavaScript</h2>
+      <div class="clock">
+        <div class="fw-bold text-center" id="date"></div>
+        <div class="clock__time">
+          <div class="fw-bold" id="hours"></div>
+          <div class="flex">
+            <div class="fw-bold" id="am-pm"></div>
+            <div class="fw-bold" id="seconds"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer">
+      <p class="fw-bold text-center">
+        Todos los derechos reservados &copy; by Dwight Gudiel
+        <span id="copyright-year"></span>
+      </p>
+    </footer>
+
+    <!-- app -->
+    <script src="./js/app.js" type="module"></script>
+
+    <!-- moment js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/locale/es.min.js"
+      integrity="sha512-tgY2qswcbQir80Vp67s5ZdbKikl99YmVXp3V/C4Acthk4gI29ONbQ+MR8B5tpESkNoa0N1P7HnSuzC6nOflrwA=="
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
